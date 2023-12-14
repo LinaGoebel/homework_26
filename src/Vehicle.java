@@ -9,9 +9,7 @@ public class Vehicle {
   }
 
   public String displayInfo() {
-    System.out.printf("%s %d", this.brand, this.year);
-
-    return null;
+    return String.format("%s %d", this.brand, this.year);
   }
 }
 

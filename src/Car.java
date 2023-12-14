@@ -6,11 +6,11 @@ public class Car extends Vehicle{
     this.model = model;
   }
   public String toString() {
-    return String.format("%s %s %d", brand, model, year);
+    return String.format("%s %d %s ", brand, year, model);
   }
   @Override
   public String displayInfo(){
-    return String.format("%s %d %s", super.displayInfo(), model);
+    return String.format("%s %s", super.displayInfo(), this.model);
 
   }
 }
