@@ -8,8 +8,10 @@ public class Vehicle {
     this.year = year;
   }
 
-  public String displayInfo() {
-    return String.format("%s %d", this.brand, this.year);
+  public boolean displayInfo() {
+    System.out.printf("%s (%d)%n", this.brand, this.year);
+
+    return false;
   }
 }
 
